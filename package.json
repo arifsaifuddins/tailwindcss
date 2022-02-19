@@ -1,4 +1,23 @@
 {
+  "name": "tailwind-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./input.css -o ./public/css/style.css --watch",
+    "minify": "npx tailwindcss -o ./public/css/build.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saifuddien/tailwind-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saifuddien/tailwind-css/issues"
+  },
+  "homepage": "https://github.com/saifuddien/tailwind-css#readme",
   "devDependencies": {
     "tailwindcss": "^3.0.23"
   }
