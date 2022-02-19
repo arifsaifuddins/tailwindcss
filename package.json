@@ -1,19 +1,5 @@
 {
-  "name": "tailwind-css",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "autoprefixer": "^10.4.2",
-    "postcss": "^8.4.6",
+  "devDependencies": {
     "tailwindcss": "^3.0.23"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "watch": "npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch",
-    "minify": "npx tailwindcss -o ./src/css/build.css --minify"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }
