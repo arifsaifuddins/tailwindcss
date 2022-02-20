@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 
 <head>
   <meta charset="UTF-8">
@@ -9,13 +9,14 @@
   <link rel="stylesheet" href="./public/css/style.css">
   <style>
     body {
-      background-color: #eee;
+      box-sizing: border-box;
     }
   </style>
 </head>
 
-<body class="p-3 mb-96">
-  <h1 class="text-3xl text-center mt-2 uppercase font-bold underline text-blue-600">Hello World | Tailwind CSS</h1>
+<body class="p-3 mb-96 bg-slate-200 dark:bg-slate-900 dark:text-slate-200">
+  <h1 class="text-3xl text-center mt-2 uppercase font-bold underline text-blue-600 dark:text-slate-400">Hello World |
+    Tailwind CSS</h1>
 
   <!-- spacing -->
   <section>
@@ -64,7 +65,7 @@
       Gradient
     </div>
     <div
-      class="bg-[url('../../assets/arief.jpeg')] bg-cover my-5 rounded-md border-2 mx-auto w-96 h-96 p-3 overflow-y-scroll">
+      class="bg-[url('../../assets/1.jpg')] bg-cover my-5 rounded-md border-2 mx-auto w-96 h-96 p-3 overflow-y-scroll">
       <p class="text-white">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur modi laudantium et, inventore totam at
         perspiciatis non eaque praesentium pariatur? Iure quaerat esse molestiae officiis in accusamus, doloremque, fuga
@@ -79,14 +80,63 @@
     </div>
   </section>
 
-  <!-- border / shadow -->
+  <!-- border / effect / filter -->
   <section>
     <h2 class="text-center my-9 font-bold text-2xl text-gray-500">Border | Effect | Filter</h2>
     <div
-      class="bg-cover bg-[url('../../assets/arief.jpeg')] my-5 mx-auto rounded-lg w-96 h-96 shadow-lg shadow-gray-400 border-4 border-yellow-200 opacity-95 flex">
-      <div class="m-auto w-80 h-80 rounded-full backdrop-blur-md"></div>
+      class="bg-cover bg-[url('../../assets/2.jpg')] my-5 mx-auto rounded-lg w-96 h-96 shadow-lg shadow-gray-400 border-4 border-slate-200 opacity-95 flex">
+      <div class="m-auto w-80 h-80 rounded-lg backdrop-blur-md"></div>
     </div>
   </section>
+
+  <!-- pseudo class/element & dark mode -->
+  <section>
+    <h2 class="text-center my-9 font-bold text-2xl text-gray-500">Pseudo | Dark Mode</h2>
+    <button
+      class="mx-auto block max-w-max px-5 py-3  rounded-md bg-green-400 text-white hover:bg-green-600 shadow-lg ">Click
+      Here</button>
+
+    <div class="my-5 mx-auto w-96 p-5 rounded-lg shadow-lg hover:bg-blue-300 group">
+      <h1 class="text-2xl font-bold group-hover:text-white">Title Card</h1>
+      <p
+        class="mt-5 first-letter:text-7xl first-letter:float-left first-letter:mr-3 first-letter:font-serif group-hover:text-white">
+        Lorem,
+        ipsum dolor sit amet
+        consectetur adipisicing elit.
+        Deleniti
+        aspernatur id nostrum vitae,
+        similique quas fuga ipsam laborum. Illum blanditiis ipsum omnis, similique eos ullam officiis vel explicabo
+        culpa eaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum voluptatem dolor, id perspiciatis
+        debitis magni hic illo optio ea alias, accusamus, nihil necessitatibus rerum at minus soluta? Laboriosam, sed
+        ullam!</p>
+    </div>
+    <div class="my-5 mx-auto w-96 p-5 rounded-lg shadow-lg">
+      <form action="#">
+        <label for="email">
+          <span class="mb-3 after:content-['*'] after:text-pink-600 after:ml-1">Email Address</span>
+          <input type="email" name="email" id="email" placeholder="Input an Email..."
+            class="w-full my-2 border-2 focus:outline-yellow-300 px-3 py-1 rounded-md placeholder:text-yellow-100 invalid:focus:outline-red-600 invalid:text-red-600 peer">
+          <p class="invisible peer-invalid:visible text-red-600 text-[10px]">The Email is not valid</p>
+        </label>
+      </form>
+    </div>
+
+    <div class="flex items-center mx-auto max-w-max m-4 " id="dark">
+      <span class="mr-2">Light</span>
+      <div class="w-10 h-5 rounded-full bg-slate-600 cursor-pointer toggle">
+        <div class="w-5 h-5 rounded-full bg-slate-100 circle-tog"></div>
+      </div>
+      <span class="ml-2">Dark</span>
+    </div>
+  </section>
+
+  <!-- darkmode script -->
+  <script>
+    document.querySelector('.toggle').onclick = () => {
+      document.querySelector('html').classList.toggle('dark');
+      document.querySelector('.circle-tog').classList.toggle('ml-5');
+    }
+  </script>
 </body>
 
 </html>
