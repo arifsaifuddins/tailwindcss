@@ -7,10 +7,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tailwind CSS</title>
   <link rel="stylesheet" href="./public/css/style.css">
+  <style>
+    body {
+      background-color: #eee;
+    }
+  </style>
 </head>
 
-<body>
+<body class="p-3 mb-96">
   <h1 class="text-3xl text-center mt-2 uppercase font-bold underline text-blue-600">Hello World | Tailwind CSS</h1>
+
+  <!-- spacing -->
+  <section>
+    <h2 class="text-center my-9 font-bold text-2xl text-gray-500">Spacing</h2>
+    <div class="border-2 mt-5 bg-blue-300">
+      <div class="m-6 p-6 bg-slate-400">Margin | Padding</div>
+    </div>
+  </section>
+
+  <!-- typography -->
+  <section>
+    <h2 class="text-center my-9 font-bold text-2xl text-gray-500">Typography</h2>
+    <div class="p-6 bg-amber-200 text-4xl">
+      <span class="font-sans text-dev italic">Font</span> |
+      <span class="font-bold">Size</span>
+    </div>
+  </section>
+
+  <!-- sizing -->
+  <section>
+    <h2 class="text-center my-9 font-bold text-2xl text-gray-500">Sizing</h2>
+    <div class="w-60 mb-5 p-6 bg-red-300 h-40 text-slate-100 font-extrabold">Width | Height</div>
+    <div class="min-w-full bg-orange-500 p-4 text-center">
+      <div class="w-1/2 bg-white">Min/Max Width/Height</div>
+    </div>
+    <!-- arbitrary value (tanpa isi di config) -->
+    <div class="text-center bg-[#bada56] text-[42px] my-[20px] p-[10px]">
+      Custom Value
+    </div>
+  </section>
+
+  <!-- background -->
+  <section>
+    <h2 class="text-center my-9 font-bold text-2xl text-gray-500">Background</h2>
+    <div class="text-center font-semibold text-white cursor-pointer p-5 rounded-lg bg-blue-400 hover:bg-blue-600">
+      Click
+      & Hover Me
+    </div>
+    <div
+      class="my-4 p-6 font-bold text-white text-4xl text-center bg-gradient-to-r from-red-500 via-yellow-400 to-indigo-500">
+      Gradient
+    </div>
+    <div
+      class="text-center border-black border-2 p-5 text-5xl font-bold bg-gradient-to-r from-blue-400 to-yellow-300 bg-clip-text text-transparent">
+      Text
+      Gradient
+    </div>
+    <div
+      class="bg-[url('../../assets/arief.jpeg')] bg-cover my-5 rounded-md border-2 mx-auto w-96 h-96 p-3 overflow-y-scroll">
+      <p class="text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur modi laudantium et, inventore totam at
+        perspiciatis non eaque praesentium pariatur? Iure quaerat esse molestiae officiis in accusamus, doloremque, fuga
+        laudantium reiciendis ducimus provident commodi illo quis. Repudiandae neque cum esse.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cumque eius dolorem obcaecati numquam. Fugiat
+        maxime quisquam nostrum autem unde debitis dolores! Voluptatem ducimus eligendi architecto consequuntur
+        assumenda laboriosam ut vero, nobis libero. Eum, saepe omnis autem amet, alias molestiae assumenda vel fugit
+        optio quasi, suscipit voluptate rem nulla magni. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Eveniet adipisci vitae soluta perferendis iure? Eos laborum laudantium deserunt numquam alias odio minima eaque!
+        Inventore, minus! Dignissimos ipsum delectus, dolores molestias qui sapiente veritatis vitae.
+      </p>
+    </div>
+  </section>
+
+  <!-- border / shadow -->
+  <section>
+    <h2 class="text-center my-9 font-bold text-2xl text-gray-500">Border | Effect | Filter</h2>
+    <div
+      class="bg-cover bg-[url('../../assets/arief.jpeg')] my-5 mx-auto rounded-lg w-96 h-96 shadow-lg shadow-gray-400 border-4 border-yellow-200 opacity-95 flex">
+      <div class="m-auto w-80 h-80 rounded-full backdrop-blur-md"></div>
+    </div>
+  </section>
 </body>
 
 </html>
