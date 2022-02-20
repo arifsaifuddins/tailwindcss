@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tailwind CSS</title>
   <link rel="stylesheet" href="./public/css/style.css">
+  <link rel="shortcut icon" href="./assets/tailwind-css.png" type="image/x-icon">
   <style>
     body {
       box-sizing: border-box;
@@ -14,13 +15,14 @@
   </style>
 </head>
 
-<body class="p-3 mb-96 bg-slate-200 dark:bg-slate-900 dark:text-slate-200">
+<body class="p-3 mb-96 bg-slate-200 dark:bg-slate-900">
   <h1 class="text-3xl text-center mt-2 uppercase font-bold underline text-blue-600 dark:text-slate-400">Hello World |
     Tailwind CSS</h1>
 
   <!-- spacing -->
   <section>
     <h2 class="text-center my-9 font-bold text-2xl text-gray-500">Spacing</h2>
+
     <div class="border-2 mt-5 bg-blue-300">
       <div class="m-6 p-6 bg-slate-400">Margin | Padding</div>
     </div>
@@ -29,6 +31,7 @@
   <!-- typography -->
   <section>
     <h2 class="text-center my-9 font-bold text-2xl text-gray-500">Typography</h2>
+
     <div class="p-6 bg-amber-200 text-4xl">
       <span class="font-sans text-dev italic">Font</span> |
       <span class="font-bold">Size</span>
@@ -38,6 +41,7 @@
   <!-- sizing -->
   <section>
     <h2 class="text-center my-9 font-bold text-2xl text-gray-500">Sizing</h2>
+
     <div class="w-60 mb-5 p-6 bg-red-300 h-40 text-slate-100 font-extrabold">Width | Height</div>
     <div class="min-w-full bg-orange-500 p-4 text-center">
       <div class="w-1/2 bg-white">Min/Max Width/Height</div>
@@ -51,6 +55,7 @@
   <!-- background -->
   <section>
     <h2 class="text-center my-9 font-bold text-2xl text-gray-500">Background</h2>
+
     <div class="text-center font-semibold text-white cursor-pointer p-5 rounded-lg bg-blue-400 hover:bg-blue-600">
       Click
       & Hover Me
@@ -83,6 +88,7 @@
   <!-- border / effect / filter -->
   <section>
     <h2 class="text-center my-9 font-bold text-2xl text-gray-500">Border | Effect | Filter</h2>
+
     <div
       class="bg-cover bg-[url('../../assets/2.jpg')] my-5 mx-auto rounded-lg w-96 h-96 shadow-lg shadow-gray-400 border-4 border-slate-200 opacity-95 flex">
       <div class="m-auto w-80 h-80 rounded-lg backdrop-blur-md"></div>
@@ -92,11 +98,12 @@
   <!-- pseudo class/element & dark mode -->
   <section>
     <h2 class="text-center my-9 font-bold text-2xl text-gray-500">Pseudo | Dark Mode</h2>
+
     <button
       class="mx-auto block max-w-max px-5 py-3  rounded-md bg-green-400 text-white hover:bg-green-600 shadow-lg ">Click
       Here</button>
 
-    <div class="my-5 mx-auto w-96 p-5 rounded-lg shadow-lg hover:bg-blue-300 group">
+    <div class="my-5 mx-auto w-96 p-5 rounded-lg shadow-lg hover:bg-blue-300 group dark:text-slate-300">
       <h1 class="text-2xl font-bold group-hover:text-white">Title Card</h1>
       <p
         class="mt-5 first-letter:text-7xl first-letter:float-left first-letter:mr-3 first-letter:font-serif group-hover:text-white">
@@ -113,7 +120,7 @@
     <div class="my-5 mx-auto w-96 p-5 rounded-lg shadow-lg">
       <form action="#">
         <label for="email">
-          <span class="mb-3 after:content-['*'] after:text-pink-600 after:ml-1">Email Address</span>
+          <span class="mb-3 after:content-['*'] after:text-pink-600 after:ml-1 dark:text-slate-300">Email Address</span>
           <input type="email" name="email" id="email" placeholder="Input an Email..."
             class="w-full my-2 border-2 focus:outline-yellow-300 px-3 py-1 rounded-md placeholder:text-yellow-100 invalid:focus:outline-red-600 invalid:text-red-600 peer">
           <p class="invisible peer-invalid:visible text-red-600 text-[10px]">The Email is not valid</p>
@@ -121,12 +128,79 @@
       </form>
     </div>
 
-    <div class="flex items-center mx-auto max-w-max m-4 " id="dark">
+    <div
+      class="flex items-center max-w-max fixed bottom-4 left-3 z-50 p-2 rounded-lg bg-blue-400 text-slate-300 animate-my"
+      id="dark">
       <span class="mr-2">Light</span>
       <div class="w-10 h-5 rounded-full bg-slate-600 cursor-pointer toggle">
-        <div class="w-5 h-5 rounded-full bg-slate-100 circle-tog"></div>
+        <div class="w-5 h-5 rounded-full bg-slate-100 c-toggle"></div>
       </div>
       <span class="ml-2">Dark</span>
+    </div>
+  </section>
+
+  <!-- transform / transition / animation -->
+  <section>
+    <h2 class="text-center my-9 font-bold text-2xl text-gray-500">Transform | Transition | Animation</h2>
+
+    <div class="flex justify-around">
+      <div
+        class="w-40 h-40 rounded-lg bg-gray-300 hover:scale-90 hover:bg-blue-300 transition  duration-150 ease-in-out">
+      </div>
+      <div
+        class="w-40 h-40 rounded-lg bg-gray-300 hover:translate-x-7 hover:bg-red-300 transition  duration-300 ease-in-out">
+      </div>
+      <div class="w-40 h-40 rounded-lg bg-gray-300 hover:rotate-45 hover:bg-green-300 transition"></div>
+    </div>
+
+    <div class="flex justify-around mt-20">
+      <div class="w-40 h-40 rounded-lg bg-yellow-300 animate-bounce"></div>
+      <div class="w-40 h-40 rounded-lg bg-yellow-300 animate-spin-slow"></div>
+      <div class="w-40 h-40 rounded-lg bg-yellow-300 animate-my"></div>
+    </div>
+  </section>
+
+  <!-- layouting -->
+  <section>
+    <h2 class="text-center my-9 mt-14 font-bold text-2xl text-gray-500">Layouting</h2>
+
+    <div class="container mx-auto my-5 shadow-lg rounded-lg p-4 relative dark:text-slate-300">
+      <div class="w-10 h-10 flex bg-red-500 rounded-full border-2 absolute -top-4 -right-4">
+        <span class="m-auto text-1xl">❌</span>
+      </div>
+      <h2 class="mb-3 font-bold font-sans text-2xl">Lorem ipsum, dolor sit amet Debitis, id.</h2>
+      <img src="./assets/3.jpg" class="w-40 h-40 float-left mr-3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quo deleniti eius corrupti voluptatibus
+        at consectetur voluptas reiciendis molestias vitae esse doloremque nulla, mollitia unde suscipit explicabo
+        quidem ipsam obcaecati perferendis ullam. Nihil ullam quo, quaerat blanditiis accusamus, minus provident facilis
+        animi delectus, vitae saepe eius vero commodi a nostrum. Possimus facilis a asperiores id dolore voluptate,
+        ullam aut delectus soluta assumenda molestias numquam similique omnis labore libero voluptas quia? Assumenda,
+        repellendus? Eum rerum eaque magni repudiandae. Odio maxime, consequuntur dicta provident ex distinctio dolore
+        fuga assumenda inventore mollitia fugiat, repellendus quam ratione totam nesciunt ducimus aut perspiciatis Lorem
+        ipsum dolor sit, amet consectetur adipisicing elit. Tempora mollitia, doloribus veritatis explicabo dicta
+        voluptates! Doloribus quasi possimus beatae necessitatibus nesciunt soluta magni error, illum incidunt totam.
+        Laboriosam, ipsum ex. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit nisi minima omnis porro
+        magni! Doloribus ipsum ea accusantium quod incidunt atque voluptatem eos aliquid perspiciatis, repellendus
+        ratione nemo pariatur, natus rerum animi, provident suscipit fuga! Labore sint ipsa sunt laborum deserunt
+        libero, ipsam incidunt ullam vitae explicabo enim velit natus animi perspiciatis eum ab corporis in minus et
+        consequatur numquam delectus repellendus. Voluptates inventore corrupti debitis nam! Fugiat eius praesentium eum
+        adipisci, expedita, quam ullam distinctio pariatur vero perspiciatis consectetur culpa eveniet iste laboriosam,
+        ipsum omnis sequi cum consequuntur id ex? Nihil consequatur adipisci laborum atque earum placeat perferendis
+        ullam!
+        voluptate. Iusto!</p>
+    </div>
+
+    <a href="#" class="w-10 h-10 flex bg-blue-500 rounded-full border-2 fixed bottom-3 right-3 animate-bounce">
+      <span class="m-auto text-2xl font-bold text-white">^</span>
+    </a>
+
+    <div class="container mx-auto my-5 shadow-lg rounded-lg p-4 columns-3">
+      <img src="./assets/tailwind-css.png" alt="images">
+      <img src="./assets/tailwind-css.png" alt="images">
+      <img src="./assets/tailwind-css.png" alt="images">
+      <img src="./assets/tailwind-css.png" alt="images">
+      <img src="./assets/tailwind-css.png" alt="images">
+      <img src="./assets/tailwind-css.png" alt="images">
     </div>
   </section>
 
@@ -134,7 +208,7 @@
   <script>
     document.querySelector('.toggle').onclick = () => {
       document.querySelector('html').classList.toggle('dark');
-      document.querySelector('.circle-tog').classList.toggle('ml-5');
+      document.querySelector('.c-toggle').classList.toggle('ml-5');
     }
   </script>
 </body>
