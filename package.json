@@ -4,7 +4,7 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "watch": "npx tailwindcss -i ./input.css -o ./public/css/style.css --watch",
+    "watch": "npx tailwindcss -i ./input.pcss -o ./public/css/style.css --watch",
     "minify": "npx tailwindcss -o ./public/css/build.css --minify"
   },
   "repository": {

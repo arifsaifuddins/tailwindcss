@@ -628,16 +628,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.75rem;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
 .block {
@@ -666,10 +666,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-10 {
   height: 2.5rem;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .w-60 {
@@ -712,10 +708,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-}
-
-.max-w-lg {
-  max-width: 32rem;
 }
 
 .transform {
@@ -947,14 +939,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\.\.\/\.\.\/assets\/1\.jpg\'\)\] {
-  background-image: url('../../assets/1.jpg');
-}
-
-.bg-\[url\(\'\.\.\/\.\.\/assets\/2\.jpg\'\)\] {
-  background-image: url('../../assets/2.jpg');
 }
 
 .bg-\[url\(\'\.\.\/assets\/1\.jpg\'\)\] {
@@ -1342,29 +1326,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px) {
-  .sm\:h-10 {
-    height: 2.5rem;
-  }
-
-  .sm\:h-52 {
-    height: 13rem;
-  }
-
-  .sm\:h-72 {
-    height: 18rem;
-  }
-
-  .sm\:w-96 {
-    width: 24rem;
-  }
-
   .sm\:w-full {
     width: 100%;
-  }
-
-  .sm\:bg-slate-200 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(226 232 240 / var(--tw-bg-opacity));
   }
 
   .sm\:bg-blue-200 {
@@ -1387,77 +1350,33 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 2.5rem;
   }
 
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
-
-  .sm\:text-slate-200 {
-    --tw-text-opacity: 1;
-    color: rgb(226 232 240 / var(--tw-text-opacity));
-  }
 }
 
 @media (min-width: 768px) {
-  .md\:max-w-lg {
-    max-width: 32rem;
-  }
-
   .md\:max-w-xl {
     max-width: 36rem;
-  }
-
-  .md\:bg-slate-300 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(203 213 225 / var(--tw-bg-opacity));
   }
 
   .md\:bg-blue-300 {
     --tw-bg-opacity: 1;
     background-color: rgb(147 197 253 / var(--tw-bg-opacity));
   }
-
-  .md\:text-slate-300 {
-    --tw-text-opacity: 1;
-    color: rgb(203 213 225 / var(--tw-text-opacity));
-  }
 }
 
 @media (min-width: 1024px) {
-  .lg\:bg-slate-400 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-  }
-
   .lg\:bg-blue-400 {
     --tw-bg-opacity: 1;
     background-color: rgb(96 165 250 / var(--tw-bg-opacity));
   }
-
-  .lg\:text-slate-400 {
-    --tw-text-opacity: 1;
-    color: rgb(148 163 184 / var(--tw-text-opacity));
-  }
 }
 
 @media (min-width: 1280px) {
-  .xl\:bg-slate-500 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-  }
-
   .xl\:bg-blue-500 {
     --tw-bg-opacity: 1;
     background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-  }
-
-  .xl\:text-slate-500 {
-    --tw-text-opacity: 1;
-    color: rgb(100 116 139 / var(--tw-text-opacity));
   }
 }
