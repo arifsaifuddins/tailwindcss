@@ -953,6 +953,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('../../assets/2.jpg');
 }
 
+.bg-\[url\(\'\.\.\/assets\/1\.jpg\'\)\] {
+  background-image: url('../assets/1.jpg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/2\.jpg\'\)\] {
+  background-image: url('../assets/2.jpg');
+}
+
 .from-red-500 {
   --tw-gradient-from: #ef4444;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(239 68 68 / 0));
