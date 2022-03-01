@@ -144,7 +144,7 @@
 
     <div class="flex justify-around">
       <div
-        class="w-40 h-40 rounded-lg bg-gray-300 hover:scale-90 hover:bg-blue-300 transition  duration-150 ease-in-out">
+        class="w-40 h-40 rounded-lg bg-gray-300 hover:scale-90 hover:bg-blue-300 transition  duration-1h-14 bg-blue-3000 ease-in-out">
       </div>
       <div
         class="w-40 h-40 rounded-lg bg-gray-300 hover:translate-x-7 hover:bg-red-300 transition  duration-300 ease-in-out">
@@ -195,11 +195,11 @@
 
     <div class="container mx-auto my-5 shadow-lg rounded-lg p-4 columns-3">
       <img src="./public/assets/tailwind-css.png" alt="images">
+      <img src="./public/assets/1.jpg" alt="images">
       <img src="./public/assets/tailwind-css.png" alt="images">
+      <img src="./public/assets/2.jpg" alt="images">
       <img src="./public/assets/tailwind-css.png" alt="images">
-      <img src="./public/assets/tailwind-css.png" alt="images">
-      <img src="./public/assets/tailwind-css.png" alt="images">
-      <img src="./public/assets/tailwind-css.png" alt="images">
+      <img src="./public/assets/3.jpg" alt="images">
     </div>
   </section>
 
@@ -228,7 +228,7 @@
 
     <div class="container sm:flex sm:flex-wrap sm:gap-5 sm:justify-evenly mx-auto">
       <div class="overflow-hidden rounded-lg shadow-xl sm:w-72 md:w-80 lg:w-80">
-        <img src="./public/assets/3.jpg" alt="card">
+        <img src="./public/assets/3.jpg" alt="card" class="aspect-square">
         <h2 class="text-slate-600 font-bold my-3 ml-3 text-3xl">Lorem ipsum dolor sit amet</h2>
         <p class="text-slate-500 ml-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, eum nemo
           consectetur commodi illo sint.
@@ -237,7 +237,7 @@
       </div>
 
       <div class="overflow-hidden rounded-lg shadow-xl sm:w-72 md:w-80 lg:w-80">
-        <img src="./public/assets/3.jpg" alt="card">
+        <img src="./public/assets/1.jpg" alt="card" class="aspect-square">
         <h2 class="text-slate-600 font-bold my-3 ml-3 text-3xl">Lorem ipsum dolor sit amet</h2>
         <p class="text-slate-500 ml-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, eum nemo
           consectetur commodi illo sint.
@@ -246,7 +246,7 @@
       </div>
 
       <div class="overflow-hidden rounded-lg shadow-xl sm:w-72 md:w-80 lg:w-80">
-        <img src="./public/assets/3.jpg" alt="card">
+        <img src="./public/assets/2.jpg" alt="card" class="aspect-square">
         <h2 class="text-slate-600 font-bold my-3 ml-3 text-3xl">Lorem ipsum dolor sit amet</h2>
         <p class="text-slate-500 ml-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, eum nemo
           consectetur commodi illo sint.
@@ -255,7 +255,7 @@
       </div>
 
       <div class="overflow-hidden rounded-lg shadow-xl sm:w-72 md:w-80 lg:w-80">
-        <img src="./public/assets/3.jpg" alt="card">
+        <img src="./public/assets/arief.jpeg" alt="card" class="aspect-square">
         <h2 class="text-slate-600 font-bold my-3 ml-3 text-3xl">Lorem ipsum dolor sit amet</h2>
         <p class="text-slate-500 ml-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, eum nemo
           consectetur commodi illo sint.
@@ -264,7 +264,7 @@
       </div>
 
       <div class="overflow-hidden rounded-lg shadow-xl sm:w-72 md:w-80 lg:w-80">
-        <img src="./public/assets/3.jpg" alt="card">
+        <img src="./public/assets/2.jpg" alt="card" class="aspect-square">
         <h2 class="text-slate-600 font-bold my-3 ml-3 text-3xl">Lorem ipsum dolor sit amet</h2>
         <p class="text-slate-500 ml-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, eum nemo
           consectetur commodi illo sint.
@@ -273,12 +273,101 @@
       </div>
 
       <div class="overflow-hidden rounded-lg shadow-xl sm:w-72 md:w-80 lg:w-80">
-        <img src="./public/assets/3.jpg" alt="card">
+        <img src="./public/assets/1.jpg" alt="card" class="aspect-square">
         <h2 class="text-slate-600 font-bold my-3 ml-3 text-3xl">Lorem ipsum dolor sit amet</h2>
         <p class="text-slate-500 ml-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, eum nemo
           consectetur commodi illo sint.
         </p>
         <div class="px-5 py-2 ml-3 rounded-md my-3 bg-blue-300 text-white max-w-max">See More...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- grid -->
+  <section>
+    <h2 class="text-center my-9 font-bold text-2xl text-gray-500">Grid Display</h2>
+
+    <div class="container mx-auto grid grid-cols-2 gap-3 md:grid-cols-4">
+      <h1
+        class="font-bold grid text-xl aspect-[4/3] md:aspect-[3/4] md:col-start-2 md:row-start-2 lg:aspect-[4/3] rounded-lg p-3">
+        <span class="self-end p-2">Arief Saifuddien</span>
+      </h1>
+      <h2
+        class="font-bold md:text-sm md:col-start-4 md:row-start-2 aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] flex rounded-lg p-3 justify-center">
+        <span class="self-center">asaifuddien01@outlook.com</span>
+      </h2>
+
+      <div
+        class=" aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] group hover:scale-95 rounded-lg overflow-hidden transition-all duration-500">
+        <div
+          class="bg-cover bg-[url('../assets/tailwind-css.png')] rounded-lg group-hover:scale-125 transition-all duration-500 group-hover:rotate-3 h-full bg-center">
+        </div>
+      </div>
+      <div
+        class=" aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] group hover:scale-95 rounded-lg overflow-hidden transition-all duration-500 md:col-start-3">
+        <div
+          class="bg-cover bg-[url('../assets/2.jpg')] rounded-lg group-hover:scale-125 transition-all duration-500 group-hover:rotate-3 h-full bg-center">
+        </div>
+      </div>
+      <div
+        class=" aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] group hover:scale-95 rounded-lg overflow-hidden transition-all duration-500">
+        <div
+          class="bg-cover bg-[url('../assets/3.jpg')] rounded-lg group-hover:scale-125 transition-all duration-500 group-hover:rotate-3 h-full bg-center">
+        </div>
+      </div>
+      <div
+        class=" aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] group hover:scale-95 rounded-lg overflow-hidden transition-all duration-500">
+        <div
+          class="bg-cover bg-[url('../assets/1.jpg')] rounded-lg group-hover:scale-125 transition-all duration-500 group-hover:rotate-3 h-full bg-center">
+        </div>
+      </div>
+      <div
+        class=" aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] group hover:scale-95 rounded-lg overflow-hidden transition-all duration-500">
+        <div
+          class="bg-cover bg-[url('../assets/arief.jpeg')] rounded-lg group-hover:scale-125 transition-all duration-500 group-hover:rotate-3 h-full bg-center">
+        </div>
+      </div>
+      <div
+        class=" aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] group hover:scale-95 rounded-lg overflow-hidden transition-all duration-500 md:col-start-2">
+        <div
+          class="bg-cover bg-[url('../assets/1.jpg')] rounded-lg group-hover:scale-125 transition-all duration-500 group-hover:rotate-3 h-full bg-center">
+        </div>
+      </div>
+      <div
+        class=" aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] group hover:scale-95 rounded-lg overflow-hidden transition-all duration-500">
+        <div
+          class="bg-cover bg-[url('../assets/tailwind-css.png')] rounded-lg group-hover:scale-125 transition-all duration-500 group-hover:rotate-3 h-full bg-center">
+        </div>
+      </div>
+      <div
+        class=" aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] group hover:scale-95 rounded-lg overflow-hidden transition-all duration-500">
+        <div
+          class="bg-cover bg-[url('../assets/2.jpg')] rounded-lg group-hover:scale-125 transition-all duration-500 group-hover:rotate-3 h-full bg-center">
+        </div>
+      </div>
+      <div
+        class=" aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] group hover:scale-95 rounded-lg overflow-hidden transition-all duration-500">
+        <div
+          class="bg-cover bg-[url('../assets/arief.jpeg')] rounded-lg group-hover:scale-125 transition-all duration-500 group-hover:rotate-3 h-full bg-center">
+        </div>
+      </div>
+      <div
+        class=" aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] group hover:scale-95 rounded-lg overflow-hidden transition-all duration-500 md:col-start-3">
+        <div
+          class="bg-cover bg-[url('../assets/1.jpg')] rounded-lg group-hover:scale-125 transition-all duration-500 group-hover:rotate-3 h-full bg-center">
+        </div>
+      </div>
+      <div
+        class=" aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] group hover:scale-95 rounded-lg overflow-hidden transition-all duration-500 md:col-start-2">
+        <div
+          class="bg-cover bg-[url('../assets/3.jpg')] rounded-lg group-hover:scale-125 transition-all duration-500 group-hover:rotate-3 h-full bg-center">
+        </div>
+      </div>
+      <div
+        class=" aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] group hover:scale-95 rounded-lg overflow-hidden transition-all duration-500 md:col-start-4">
+        <div
+          class="bg-cover bg-[url('../assets/2.jpg')] rounded-lg group-hover:scale-125 transition-all duration-500 group-hover:rotate-3 h-full bg-center">
+        </div>
       </div>
     </div>
   </section>
